@@ -134,6 +134,9 @@
     <!-- Home section starts here -->
     <div id="Home-section">
       <div>
+        <div id="progress-div" class="text-center">
+          <progress class="progress w-56"></progress>
+        </div>
         <!-- Today's headlines starts here -->
         <section class="mx-7 mb-7">
           <div class="flex justify-between">
@@ -153,104 +156,22 @@
               </button>
             </div>
           </div>
-          <div class="flex gap-3">
+          <div class="flex">
             <div class="w-4/5">
               <div class="bg-white rounded-2xl">
-                <div class="w-full carousel rounded-box">
+                <div id="heading-carousel" class="w-full carousel rounded-box">
                   <!-- carousel-item starts -->
-                  <div class="carousel-item w-full">
-                    <div
-                      class="card w-full h-96 bg-base-100 shadow-xl image-full"
-                    >
-                      <figure>
-                        <img
-                          src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                        />
-                      </figure>
-                      <div class="card-body pt-72">
-                        <h2 class="card-title">News Title</h2>
-                        <p class="text-sm text-gray-300">2 hours ago</p>
-                      </div>
-                    </div>
-                  </div>
+
                   <!-- carousel-item ends -->
-                </div>
-                <div class="flex justify-between m-3 p-4">
-                  <div>Sports</div>
-                  <div class="flex gap-5">
-                    <p><i class="fa-regular fa-eye"></i> 1.5M</p>
-                    <p><i class="fa-regular fa-message"></i> 5K</p>
-                    <p><i class="fa-solid fa-share"></i> 15K</p>
-                  </div>
                 </div>
               </div>
               <div class="p-7 bg-white rounded-2xl">
-                <h2 class="text-3xl font-bold">Latest News</h2>
-                <div class="grid grid-cols-2 gap-2">
-                  <!-- card starts -->
-                  <div class="card w-96">
-                    <figure>
-                      <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">News Title</h2>
-                      <div class="card-actions justify-start">
-                        <p class="text-sm text-gray-400">1 Hour Ago</p>
-                        <p class="text-sm text-gray-400">CNN Indonasia</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- card ends -->
-                  <div class="card w-96">
-                    <figure>
-                      <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">News Title</h2>
-                      <div class="card-actions justify-start">
-                        <p class="text-sm text-gray-400">1 Hour Ago</p>
-                        <p class="text-sm text-gray-400">CNN Indonasia</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card w-96">
-                    <figure>
-                      <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">News Title</h2>
-                      <div class="card-actions justify-start">
-                        <p class="text-sm text-gray-400">1 Hour Ago</p>
-                        <p class="text-sm text-gray-400">CNN Indonasia</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card w-96">
-                    <figure>
-                      <img
-                        src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">News Title</h2>
-                      <div class="card-actions justify-start">
-                        <p class="text-sm text-gray-400">1 Hour Ago</p>
-                        <p class="text-sm text-gray-400">CNN Indonasia</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h2 class="text-3xl font-bold mb-3">Latest News</h2>
+                <div id="latest-news" class="grid grid-cols-2 gap-2"></div>
               </div>
             </div>
-            <div>
-              <!-- card starts here -->
-              <div class="card w-96">
+            <div id="small-news">
+              <div class="card w-64">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -265,7 +186,7 @@
                 </div>
               </div>
               <!-- card ends here -->
-              <div class="card w-96">
+              <div class="card w-64">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -279,7 +200,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card w-96">
+              <div class="card w-64">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -293,7 +214,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card w-96">
+              <div class="card w-64 bg-red-300">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -315,188 +236,10 @@
         <section class="mx-7 mb-7">
           <h2 class="text-3xl font-bold mb-7">World News</h2>
           <div>
-            <div class="carousel rounded-box w-full">
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-96 bg-base-100 shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item w-1/3">
-                <div class="card w-full shadow-xl image-full">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <h2 class="card-title">News Title</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div id="world-carousel" class="carousel rounded-box w-full"></div>
           </div>
         </section>
         <!-- World's news ends here -->
-        <!-- Tech education starts here -->
-        <section class="mx-7 mb-7">
-          <h2 class="text-2xl font-bold mb-7">Tech Education</h2>
-          <div class="grid grid-cols-3 gap-3">
-            <div class="col-span-2">
-              <div
-                class="card lg:card-side bg-base-100 shadow-xl flex flex-row-reverse mb-3"
-              >
-                <figure>
-                  <img
-                    src="/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-                    alt="Album"
-                  />
-                </figure>
-                <div class="card-body">
-                  <div>
-                    <img src="" alt="" />
-                    <p class="text-sm text-gray-500">Jane Cooper</p>
-                  </div>
-                  <h2 class="card-title">News Title</h2>
-                  <p class="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique tempore quas fuga omnis? Asperiores corrupti sequi
-                    nemo, accusamus sint consequatur.
-                  </p>
-                  <div class="flex">
-                    <p class="text-sm text-gray-500">date</p>
-                    <p class="text-sm text-gray-500">3 Min Read</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="card lg:card-side bg-base-100 shadow-xl row-span-2 flex flex-col"
-            >
-              <figure>
-                <img
-                  src="/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-                  alt="Album"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">News Title</h2>
-                <p class="text-sm text-gray-500">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Consequuntur expedita odit itaque adipisci iure, placeat ipsum
-                  nostrum iste impedit? Molestias!
-                </p>
-                <div>
-                  <img src="" alt="" />
-                  <p class="text-sm text-gray-500">Jane Cooper</p>
-                  <p class="text-sm text-gray-500">Date</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-2">
-              <div>
-                <div class="card bg-base-100 shadow-xl flex flex-row-reverse">
-                  <figure>
-                    <img
-                      src="/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-                      alt="Album"
-                    />
-                  </figure>
-                  <div class="card-body">
-                    <div>
-                      <img src="" alt="" />
-                      <p class="text-sm text-gray-500">Jane Cooper</p>
-                    </div>
-                    <h2 class="card-title">News Title</h2>
-                    <p class="text-sm text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Adipisci, illum optio porro rerum quis esse tempora fugiat
-                      reprehenderit quasi dicta.
-                    </p>
-                    <div class="flex">
-                      <p class="text-sm text-gray-500">date</p>
-                      <p class="text-sm text-gray-500">3 Min Read</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Tech education ends here -->
       </div>
     </div>
     <!-- Home section ends here -->
